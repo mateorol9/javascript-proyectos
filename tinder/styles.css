@@ -96,19 +96,19 @@ header {
         z-index: 2;
 
         &.go-left {
-            transform: translateX(-150%) rotate(-30deg) !important;
-            transition: transform .3s ease;
+            transform: translateX(-140%) rotate(-30deg) !important;
+            transition: transform .4s ease;
         }
         &.go-left--btn {
-            transform: translateX(-150%) rotate(-30deg) !important;
+            transform: translateX(-140%) rotate(-30deg) !important;
             transition: transform .5s ease;
         }
         &.go-right {
-            transform: translateX(150%) rotate(30deg) !important;
+            transform: translateX(140%) rotate(30deg) !important;
             transition: transform .4s ease;
         }
         &.go-right--btn {
-            transform: translateX(150%) rotate(30deg) !important;
+            transform: translateX(140%) rotate(30deg) !important;
             transition: transform .5s ease .3s;
         }
         &.reset {
