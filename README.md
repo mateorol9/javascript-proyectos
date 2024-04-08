@@ -1,28 +1,25 @@
 # Proyectos de JavaScript
 
-Este repositorio contiene una colección de proyectos de JavaScript desarrollados como parte de cursos y prácticas, con el apoyo de @AlexCG y @Midudev.
+En este repositorio, encontrarás una colección de proyectos de JavaScript que he desarrollado mientras exploraba y practicaba con el lenguaje. Estos proyectos están fundamentados en los conocimientos adquiridos a través de cursos en línea, tutoriales y contribuciones a la comunidad.
 
-## Acerca de
-
-En este repositorio, encontrarás una serie de proyectos de JavaScript que he desarrollado mientras aprendía y practicaba con el lenguaje. Estos proyectos están basados en los conocimientos adquiridos a través de cursos en línea y tutoriales, así como la inspiración y el apoyo proporcionados por AlexCG y Midudev.
+Cada proyecto dentro de este repositorio representa una oportunidad para aplicar y reforzar conceptos clave de JavaScript, así como para experimentar con diferentes tecnologías y enfoques de desarrollo. Desde proyectos simples hasta desafíos más complejos, esta colección refleja mi viaje de aprendizaje y crecimiento como desarrollador de JavaScript.
 
 ## Contenido
 
 A continuación, se detalla una lista de los proyectos incluidos en este repositorio:
 
-1. **Tinder**: Este proyecto, desarrollado con CSS, HTML y JavaScript, se centra en la práctica de la manipulación del DOM.
+1. [Tinder en JavaScript](https://mateorol9.github.io/javascript-proyectos/tinder/)
 
-## Inspiración
+El proyecto me permitio practicar el manejo de eventos de ratón y táctiles (mousedown, touchstart, mousemove, touchmove, mouseup, touchend), así como la manipulación del DOM, con el fin de desarrollar una interfaz de deslizamiento de tarjetas al estilo "swipe".
+**Habilidades**: `DOM` `Animaciones con gestos` `Eventos de mouse y touch` `Transiciones CSS`
+
+**Fuente:** Midudev (@midudev): [Enlace al proyecto original](https://www.javascript100.dev/01-tinder-swipe)
+
+## Inspiración & Agradecimientos
 
 - **AlexCG (@AlexCGDesign)**: [Enlace al perfil de Twitter](https://twitter.com/AlexCGDesign)
 - **Midudev (@midudev)**: [Enlace al perfil de Twitter](https://twitter.com/midudev)
 
-
-## Recursos Adicionales
-
-- [Enlace al curso de AlexCG](#)
-- [Enlace al curso de Midudev](#)
-- [Recursos adicionales sobre JavaScript](#)
 
 ## Contacto
 
