@@ -109,7 +109,7 @@ header {
         }
         &.go-right--btn {
             transform: translateX(140%) rotate(30deg) !important;
-            transition: transform .5s ease .3s;
+            transition: transform .5s ease;
         }
         &.reset {
             transform: translateX(0) !important;

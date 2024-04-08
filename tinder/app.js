@@ -130,26 +130,25 @@ function btnClics(e) {
         
         if (Math.abs(pullDeltaX) === 0 && lastCard.length > 0) { 
 
-        spanMessage.insertAdjacentElement('beforebegin', lastCard[0]); 
-        lastCard.shift(); 
+            spanMessage.insertAdjacentElement('beforebegin', lastCard[0]); 
+            lastCard.shift(); 
 
-    } else {
+        } else {
+            alert('No es posible deshacer más perfiles');
+        }
         isAnimating = false;
-        return;
-    }
-    isAnimating = false;
  }
     //Función para el botón de nope <--------------------
     else if(e.target.matches('.is-remove') && actualCard && !isAnimating) {
-        isAnimating = true;
+        isAnimating = true; //Activamos la animación
         let nopeOpacity = actualCard.querySelector('.nope');
-        //remueve los estilos inline y luego agrega el opacity
+
+        //remueve los estilos inline y luego agrega la Opacidad al dislike
         nopeOpacity.removeAttribute('style');
         nopeOpacity.classList.add('opacity');
         
         //Una vez acaba la animación del nope empieza el swipe
         actualCard.addEventListener('transitionend', () => {
-       
         actualCard.classList.add('go-left--btn');
         
         //Reseteamos y eliminamos la card una vez acabe el swipe
@@ -164,33 +163,42 @@ function btnClics(e) {
             //Elimino la card actual
             actualCard.remove();
         });
-    });
-        //Desactivamos la animación
-        isAnimating = false; 
+    });  
+        isAnimating = false; //Desactivamos la animación
     } 
 
     //Función para el botón de like <--------------------
-
-    else if(e.target.matches('.is-fav') && actualCard) {
-
+    else if(e.target.matches('.is-fav') && actualCard && !isAnimating) {//cuando el match coincide con la clase '.is-fav' & no hay animación activa
+        isAnimating = true; //Activamos la animación
         let likeOpacity = actualCard.querySelector('.like');
 
+        //Reseteamos estilos & agregamos transición de opacidad a 1 al texto like
         likeOpacity.removeAttribute('style');
         likeOpacity.classList.add('opacity');
-        actualCard.classList.add('go-right--btn');
-        
-        //Reseteamos y eliminamos la card
+
+        //Termina la transición de like & comenzamos transitión del swipe a la derecha
         actualCard.addEventListener('transitionend', () => {
-            //Removemos clases y atributos
-            likeOpacity.classList.remove('opacity');
-            actualCard.classList.remove('go-right--btn');
-    
-            //Clonamos la card
-            const clonedCard = actualCard.cloneNode(true);
-            lastCard.unshift(clonedCard);
-            //Elimino la card actual
-            actualCard.remove(); 
+            actualCard.classList.add('go-right--btn');
+            
+            //Reseteamos y eliminamos la card
+            actualCard.addEventListener('transitionend', () => {
+                //Removemos clases y atributos
+                likeOpacity.classList.remove('opacity');
+                actualCard.classList.remove('go-right--btn');
+        
+                //Clonamos la card para poder deshacer si undimos el button undo
+                const clonedCard = actualCard.cloneNode(true);
+                lastCard.unshift(clonedCard);
+                //Elimino la card actual
+                actualCard.remove(); 
+            });
         });
+        isAnimating = false; //Desactivamos la animación
+    } 
+    
+    //Función para el botón Boost <--------------------
+    else if (e.target.matches('.is-zap') && actualCard && !isAnimating){
+        alert('Es necesaria la versión Plus para tener acceso a esta funcionalidad');
     } else {return}
 
 } //Finaliza la funcion btnClics
