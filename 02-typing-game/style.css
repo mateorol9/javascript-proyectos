@@ -1,0 +1,26 @@
+*, 
+::after, 
+::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    color-scheme: light dark;
+    --green: #00b755;
+    --yellow: #daaf38;
+    --red: #ca4754;
+    --black: #222;
+    --gray: #999;
+}
+
+body {
+    background: var(--black);
+    font-family: "DM Mono",monospace;
+    display: grid;
+    padding: 32px;
+    justify-content: center;
+    margin-top: 32px;
+}
+ input {
+    font-family: "DM Mono",monospace;
+}
