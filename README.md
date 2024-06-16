@@ -8,7 +8,7 @@ Cada proyecto dentro de este repositorio representa una oportunidad para aplicar
 
 A continuación, se detalla una lista de los proyectos incluidos en este repositorio:
 
-1. [Tinder en JavaScript](https://mateorol9.github.io/javascript-proyectos/tinder/)
+1. [Tinder en JavaScript](https://mateorol9.github.io/javascript-proyectos/01-tinder/)
 
 El proyecto me permitio practicar el manejo de eventos de ratón y táctiles (mousedown, touchstart, mousemove, touchmove, mouseup, touchend), así como la manipulación del DOM, con el fin de desarrollar una interfaz de deslizamiento de tarjetas al estilo "swipe".
 **Habilidades**: `DOM` `Animaciones con gestos` `Eventos de mouse y touch` `Transiciones CSS`
