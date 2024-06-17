@@ -21,6 +21,27 @@ body {
     justify-content: center;
     margin-top: 32px;
 }
+
+section {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+time {
+    color: var(--yellow);
+}
  input {
-    font-family: "DM Mono",monospace;
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /*opacity: 0;*/
+}
+p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 8px;
 }
